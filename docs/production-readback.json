@@ -1,0 +1,152 @@
+{
+  "url": "https://modao-odyssey.hk6429.workers.dev",
+  "version": "44399a87-43ce-4764-933d-56a32a3b6eb5",
+  "releaseCommit": "0dedd6a",
+  "checkedAt": "2026-10-04T06:32:17.200791+00:00",
+  "method": "Chrome same-origin fetch through CUA CDP; Python requests returned 403",
+  "files": [
+    {
+      "path": "/",
+      "sha256": "68ca71c6cee0eb997ea5db3190b3c5dab4b8b174da00e5686bab554eaede814e",
+      "mime": "text/html",
+      "bytes": 7848,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/style.css",
+      "sha256": "01dc7cf08def99dc1b60152bbd2680cea69a9cb24a0e5a8b01ca6e17c23b84a0",
+      "mime": "text/css",
+      "bytes": 20632,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/app.js",
+      "sha256": "7b9ec40dff21fa4c0fcac57bb537a7197eef27ce903cb6d1c81e0d0ae5778474",
+      "mime": "text/javascript",
+      "bytes": 20450,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/engine.js",
+      "sha256": "ee8f25468c5c32cb4a2b2315d49754b74c7d6370518de425fb7ac9b7b864b0d2",
+      "mime": "text/javascript",
+      "bytes": 6248,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/story.js",
+      "sha256": "c6ff8442c1415dfa8559414253adfc2113ef45eb9a2f89f3950fbabae307b348",
+      "mime": "text/javascript",
+      "bytes": 9034,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/data/questions.json",
+      "sha256": "21fd5e425858479115174da504f26bd91d277578adb141658349b1d52f6db4a3",
+      "mime": "application/json",
+      "bytes": 4813933,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/assets/hero.webp",
+      "sha256": "05aa6790dceb7ebf0c43ffd968633f1f9ccaeac1fbfc5a15eaf4df5348eb1277",
+      "mime": "image/webp",
+      "bytes": 401326,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/assets/scenery.webp",
+      "sha256": "2e683400ba9943a82b320efc6247f47a8a97fcdc83dbe060131048b7220f5d29",
+      "mime": "image/webp",
+      "bytes": 610294,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/assets/streets.webp",
+      "sha256": "f0cbbfcfa0d05369424bdd2f109d9ed089c61e30c063397032cdd8d313df5743",
+      "mime": "image/webp",
+      "bytes": 609016,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    },
+    {
+      "path": "/assets/seal.svg",
+      "sha256": "14614ad4880408d64eb497be4accff31233d06a4ca3c7025dba461851bbbcdaf",
+      "mime": "image/svg+xml",
+      "bytes": 232,
+      "status": 200,
+      "match": true,
+      "nosniff": true,
+      "csp": true
+    }
+  ],
+  "excluded": [
+    {
+      "path": "/.env",
+      "status": 404
+    },
+    {
+      "path": "/.git/config",
+      "status": 404
+    },
+    {
+      "path": "/README.md",
+      "status": 404
+    },
+    {
+      "path": "/data/ziyin-zixing-elementary.json",
+      "status": 404
+    },
+    {
+      "path": "/docs/contract.md",
+      "status": 404
+    },
+    {
+      "path": "/assets/hero.png",
+      "status": 404
+    },
+    {
+      "path": "/package.json",
+      "status": 404
+    },
+    {
+      "path": "/_headers",
+      "status": 404
+    }
+  ],
+  "ui": {
+    "storyOpening": true,
+    "threeCards": true,
+    "threeAnswers": true,
+    "earnedXP": 30,
+    "learnedQuestions": 3,
+    "persistedAfterReload": true,
+    "testStorageIsolated": true
+  }
+}

@@ -1,5 +1,7 @@
 # 墨島字旅
 
+正式網站：https://modao-odyssey.hk6429.workers.dev/
+
 把字，寫回山海之間。以「字旅」的冒險學習架構為參考，使用「字字珠璣」國字注音、字音字形題庫的台灣山海老街學習網站。
 
 ![墨島字旅](assets/hero.webp)
@@ -74,4 +76,13 @@ node scripts/browser-qa.mjs
 
 ## 交付狀態
 
-已完成本機可玩版本、來源比對、桌面及390px手機學習流程測試，尚未公開部署，也未進行真人學生試用或學習成效研究。
+已完成本機可玩版本、來源比對、桌面及390px手機學習流程測試，已部署至 Cloudflare Workers Static Assets，並完成10個公開檔案逐位元核對、8個排除路徑404及正式站一批3題與重載存檔驗證。詳見 [正式站讀回](docs/production-readback.json)。尚未進行真人學生試用或學習成效研究。
+
+## 更新正式網站
+
+```sh
+wrangler whoami
+wrangler deploy
+```
+
+部署使用 `wrangler.jsonc`，建置會清空並重建 `dist/`，只發布白名單檔案。設定依據：[Cloudflare Static Assets](https://developers.cloudflare.com/workers/static-assets/) 與 [Headers](https://developers.cloudflare.com/workers/static-assets/headers/)。
