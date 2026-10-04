@@ -86,3 +86,7 @@ wrangler deploy
 ```
 
 部署使用 `wrangler.jsonc`，建置會清空並重建 `dist/`，只發布白名單檔案。設定依據：[Cloudflare Static Assets](https://developers.cloudflare.com/workers/static-assets/) 與 [Headers](https://developers.cloudflare.com/workers/static-assets/headers/)。
+
+## 沉浸式故事漫遊
+
+滿版場景搭配透明背景兩頭身旅伴，逐句閱讀故事後接受任務。行旅目錄收納朝代／景點與章節；未解鎖章節可探看與試讀，正式學習仍依序進行。首頁與預習不改寫學習成果，原本機存檔與匯入匯出格式保持相容。首站採獨立高解析場景，其餘沿用原水墨地景圖集。

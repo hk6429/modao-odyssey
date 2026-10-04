@@ -1,0 +1,123 @@
+{
+  "assets": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "382bbe1bc4350b11205ec4f59f7bc6d1073642a19bc517c83622551725d428df",
+      "match": true,
+      "type": "text/html",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "story.js",
+      "status": 200,
+      "sha256": "c6ff8442c1415dfa8559414253adfc2113ef45eb9a2f89f3950fbabae307b348",
+      "match": true,
+      "type": "text/javascript",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "style.css",
+      "status": 200,
+      "sha256": "01dc7cf08def99dc1b60152bbd2680cea69a9cb24a0e5a8b01ca6e17c23b84a0",
+      "match": true,
+      "type": "text/css",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "engine.js",
+      "status": 200,
+      "sha256": "ee8f25468c5c32cb4a2b2315d49754b74c7d6370518de425fb7ac9b7b864b0d2",
+      "match": true,
+      "type": "text/javascript",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "immersive.js",
+      "status": 200,
+      "sha256": "0dcf27b62574ff79708720a4fcb109582b289f26907c755a58e65aab51062fcc",
+      "match": true,
+      "type": "text/javascript",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256": "5ed70a190d419c05d1c1680b8a8dd7708354b004e846fdeef283de9219bda42e",
+      "match": true,
+      "type": "text/javascript",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "immersive.css",
+      "status": 200,
+      "sha256": "ff021d6e83b6ea515fb91936ea4c9421654fad129a2ecca131a0f2aed03e76ca",
+      "match": true,
+      "type": "text/css",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "data/questions.json",
+      "status": 200,
+      "sha256": "21fd5e425858479115174da504f26bd91d277578adb141658349b1d52f6db4a3",
+      "match": true,
+      "type": "application/json",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/hero.webp",
+      "status": 200,
+      "sha256": "05aa6790dceb7ebf0c43ffd968633f1f9ccaeac1fbfc5a15eaf4df5348eb1277",
+      "match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/guides.webp",
+      "status": 200,
+      "sha256": "376f07ab3176485565aa0dd03169042d87c69e0972460f4daf240aadbc51646a",
+      "match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/arrival.webp",
+      "status": 200,
+      "sha256": "a7e985d366da2612d8d68e2ce911f7753526a5c91a233ad17e4498b62bd58e30",
+      "match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/seal.svg",
+      "status": 200,
+      "sha256": "14614ad4880408d64eb497be4accff31233d06a4ca3c7025dba461851bbbcdaf",
+      "match": true,
+      "type": "image/svg+xml",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/scenery.webp",
+      "status": 200,
+      "sha256": "2e683400ba9943a82b320efc6247f47a8a97fcdc83dbe060131048b7220f5d29",
+      "match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "assets/streets.webp",
+      "status": 200,
+      "sha256": "f0cbbfcfa0d05369424bdd2f109d9ed089c61e30c063397032cdd8d313df5743",
+      "match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    }
+  ],
+  "excluded": {
+    ".env": 404,
+    "engine.test.mjs": 404,
+    "scripts/build.mjs": 404,
+    "_headers": 404
+  },
+  "allMatch": true
+}
