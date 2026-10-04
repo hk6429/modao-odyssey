@@ -1,0 +1,1 @@
+{"name":"modao-odyssey","version":"1.0.0","private":true,"type":"module","description":"墨島字旅：台灣山海老街國字注音學習冒險","scripts":{"start":"node server.mjs","build":"node scripts/build.mjs","test":"node --test tests/*.test.mjs"},"engines":{"node":">=22"},"devDependencies":{"playwright-core":"1.61.1"}}

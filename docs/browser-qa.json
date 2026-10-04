@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "desktop render",
+    "source questions rendered",
+    "3-item batch",
+    "wrong-answer explanation and retry",
+    "close and reload resume",
+    "atomic XP",
+    "reload persistence",
+    "bag search and detail",
+    "backup export cancel import accept",
+    "eight story locations",
+    "companion persistence",
+    "locked chapter",
+    "390px four views no overflow",
+    "mobile lesson"
+  ],
+  "consoleErrors": [],
+  "overflows": []
+}

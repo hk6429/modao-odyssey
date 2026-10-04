@@ -1,0 +1,21 @@
+{
+  "rawCount": 4870,
+  "count": 4867,
+  "duplicateCount": 3,
+  "sources": [
+    {
+      "file": "ziyin-zixing-elementary.json",
+      "count": 1532,
+      "sha256": "ab4f75b0c698481c3f0a4556471d71bc8517293d7fc3b4ac20d7d8645f160481"
+    },
+    {
+      "file": "ziyin-zixing-junior.json",
+      "count": 3338,
+      "sha256": "d6e89606cceadfe88528bb9cf2b11b79d9e989b89b142fc9b08b53107c2a35fb"
+    }
+  ],
+  "types": {
+    "字音": 2920,
+    "字形": 1947
+  }
+}
