@@ -1,0 +1,17 @@
+{
+  "viewport": {
+    "width": 390,
+    "horizontalOverflow": false
+  },
+  "consoleErrors": [],
+  "testsTotalAcrossFourSites": 218,
+  "productionVersion": "bed527d9-49c4-4be3-9dc3-7281de5386f5",
+  "scenarios": [
+    "resume wrong explanation",
+    "numeric/arrow correct auto advance",
+    "3/61 collected, 0/10 chapters",
+    "checklist",
+    "story continuity",
+    "production existing progress read"
+  ]
+}

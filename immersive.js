@@ -8,17 +8,17 @@ export function createImmersion({regions,companions,kind}){
  if(!$('#about-footer'))$('footer').append($('#about'));
 
  const scroll=document.createElement('button');scroll.className='painting-scroll';scroll.textContent='走進故事 ↓';scroll.onclick=()=>enter();hero.append(scroll);
- const sheet=document.createElement('dialog');sheet.id='chapter-sheet';sheet.setAttribute('aria-label','本章故事與任務');
+ const sheet=document.createElement('dialog');sheet.id='chapter-sheet';sheet.setAttribute('aria-label','本小關故事與任務');
  const close=document.createElement('button');close.className='close';close.id='close-chapter';close.setAttribute('aria-label','回到故事');close.textContent='×';close.onclick=()=>sheet.close();sheet.append(close,card);document.body.append(sheet);
  const drawer=document.createElement('dialog');drawer.id='scene-picker';drawer.setAttribute('aria-labelledby','scene-picker-title');
- drawer.innerHTML=`<button class="close" id="close-picker" aria-label="收起行旅目錄">×</button><p class="eyebrow">想去哪一頁風景？</p><h2 id="scene-picker-title">${kind==='literature'?'千載行旅':'山海行旅'}</h2><p>可先探看故事，學習任務依序解鎖。</p>`;
+ drawer.innerHTML=`<button class="close" id="close-picker" aria-label="收起行旅目錄">×</button><p class="eyebrow">想去哪一頁風景？</p><h2 id="scene-picker-title">${kind==='literature'?'千載行旅':'山海行旅'}</h2><p>可先探看故事，學習任務依序解鎖。</p><div id="picker-progress"></div>`;
  drawer.append(tabs,$('#map-nodes'));document.body.append(drawer);
  $('#close-picker').onclick=()=>drawer.close();
  const landscape=$('#landscape');landscape.querySelector('svg').remove();
  const guide=document.createElement('div');guide.className='scene-character';guide.setAttribute('role','img');world.append(guide);
- const title=document.createElement('header');title.className='scene-heading';title.innerHTML='<p id="scene-era"></p><h2 id="scene-title"></h2>';world.append(title);
- const menu=document.createElement('button');menu.id='scene-menu';menu.className='scene-menu';menu.textContent=kind==='literature'?'行旅目錄 ☰':'山海目錄 ☰';menu.onclick=()=>drawer.showModal();world.append(menu);
- const dialogue=document.createElement('section');dialogue.className='scene-dialogue';dialogue.setAttribute('aria-label','旅途對話');dialogue.innerHTML='<div class="dialogue-copy"><div class="dialogue-speaker"><b id="scene-speaker"></b><span id="scene-page"></span></div><p id="scene-line" aria-live="polite"></p><div class="scene-actions"><button id="scene-back" class="scene-text">‹ 上一句</button><button id="scene-details" class="scene-text">本章詳情</button><button id="scene-continue" class="scene-continue"></button></div></div>';world.append(dialogue);
+ const title=document.createElement('header');title.className='scene-heading';title.innerHTML='<p id="scene-era"></p><h2 id="scene-title"></h2><div id="scene-progress"></div>';world.append(title);
+ const menu=document.createElement('button');menu.id='scene-menu';menu.className='scene-menu';menu.textContent='小關進度 ☰';menu.onclick=()=>drawer.showModal();world.append(menu);
+ const dialogue=document.createElement('section');dialogue.className='scene-dialogue';dialogue.setAttribute('aria-label','旅途對話');dialogue.innerHTML='<div class="dialogue-copy"><div class="dialogue-speaker"><b id="scene-speaker"></b><span id="scene-page"></span></div><p id="scene-line" aria-live="polite"></p><div class="scene-actions"><button id="scene-back" class="scene-text">‹ 上一句</button><button id="scene-details" class="scene-text">本小關詳情</button><button id="scene-continue" class="scene-continue"></button></div></div>';world.append(dialogue);
  let selected=-1,region=0,line=0,lines=[];
  function paintDialogue(){
   $('#scene-line').textContent=lines[line]||'';$('#scene-page').textContent=`${line+1} / ${lines.length}`;

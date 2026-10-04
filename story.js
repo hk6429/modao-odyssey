@@ -25,4 +25,22 @@ export const beats=[
  '書卷已經透出光，還有幾句話等你確認。',
  '你翻開這一卷的最後一頁，準備把找到的字還給等待的人。',
 ];
-export function chapterStory(index,choice){const r=regions[Math.floor(index/10)];const n=index%10;return {title:r.steps[n],text:n===0?r.intro:beats[n],echo:choice===0||choice===1?r.echo[choice]:'',ending:n===9?r.ending:`「${r.steps[n]}」留下了清楚的字跡。下一段線索是「${r.steps[n+1]}」。`};}
+const dadaocheng=[
+ ['辨認騎樓石縫裡散落的字，找出微光指向哪一家店','字珠聚成一枚茶葉記號，指向空白的茶行招牌','茶葉記號把你帶到茶行，但店名還讀不出來'],
+ ['替茶行辨回招牌上的字，問出家書的線索','茶行老闆認回店名，拿出一封以布繩紮起的家書','要找到收信人，得先到布莊問清楚這條結繩'],
+ ['辨認布莊留下的字樣，讀出結繩的來處','布莊學徒認出結繩，說它來自碼頭的一位船客','你帶著結繩前往碼頭，追問家書從哪裡寄來'],
+ ['讀回碼頭信件的地名，追查船客的收件託付','船客留下的便條提到一包藥，線索轉向街上的藥鋪','收信人的線索可能就寫在藥包上'],
+ ['辨讀藥包上的字，分清姓名與藥材的名稱','藥鋪掌櫃辨出收件人的姓，卻想不起完整地址','屋外突然落雨；你帶著半張地址，找地方避雨'],
+ ['讀懂借傘人的留言，確認地址的方向','借傘的街坊指向巷口：那裡有位正在找路的信差','與信差會合，才能把手上的兩段線索拼起來'],
+ ['替迷路的信差辨回地址，核對彼此的線索','信差的送信簿補齊巷名，家書只差最後的落款','你們循著巷名，來到一扇亮著燈的窗前'],
+ ['核對窗邊留下的落款，確認等信的人','窗邊的老人認出寄信人的名字，終於接過家書','老人想把消息告訴街坊，請你一起讀出信裡的問候'],
+ ['讀回街坊相傳的字句，讓家書的問候完整傳開','店家與信差接住問候，老街重新有了彼此的名字','把這一路的字跡整理進山海書，就能留下第一站的結局'],
+ ['核對最後的字珠，將送信經過寫成山海書第一頁','家書抵達等信人手中，茶行與街坊的名字也回到招牌上','山海書的新頁浮出九份紅燈的影子，下一封回信正等你照路']
+];
+export function chapterStory(index,choice){
+ const ri=Math.floor(index/10),r=regions[ri],n=index%10,nextRegion=regions[ri+1];
+ const event=ri===0?dadaocheng[n]:[`${r.request}眼前要先讀回「${r.steps[n]}」這一頁的文字`,n===9?r.ending:`你已把「${r.steps[n]}」的文字收齊，這段線索可以交回旅伴`,n<9?`旅伴依照這一頁的記號，帶你前往「${r.steps[n+1]}」，繼續${r.subtitle}`:nextRegion?`這一站的託付已完成。山海書翻向${nextRegion.name}：${nextRegion.intro}`:'山海書已修復；帶著沿途的字，回讀你留下的故事'];
+ const before=n===0?r.intro:ri===0?`${dadaocheng[n-1][1]}。${dadaocheng[n-1][2]}。`:`上一小關「${r.steps[n-1]}」的字跡已找回。為了${r.subtitle}，旅伴帶你沿線索走到「${r.steps[n]}」。`;
+ const mission=event[0]+'。',resolution=event[1]+'。',next=event[2]+'。';
+ return {title:r.steps[n],before,mission,resolution,next,promise:`才能完成「${r.steps[n]}」的託付。`,text:`${before}這一次，${mission}`,echo:r.echo[choice]||'',ending:resolution+next};
+}
